@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eletek_gep"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/gep_elet1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/gep_elet2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/gep_elet3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2"
+            android:padding="2dp"/>
+
+        <TextView
+            android:id="@+id/gep_szoveg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gép"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eletek_jatekos"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/jatekos_szoveg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Játékos"
+            android:textSize="30sp"/>
+
+        <ImageView
+            android:id="@+id/jatekos_elet1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/jatekos_elet2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2"
+            android:padding="2dp"/>
+
+        <ImageView
+            android:id="@+id/jatekos_elet3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/heart2"
+            android:padding="2dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eredmeny_dontetlen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eletek_jatekos"
+        android:layout_centerHorizontal="true"
+        android:text="Döntetlenek száma: 0"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/gep_valasztas_kep"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/eredmeny_dontetlen"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock" />
+
+    <TextView
+        android:id="@+id/gep_valasztas_szoveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gep_valasztas_kep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="A gép választása"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:id="@+id/sajat_valasztas_kep"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/gep_valasztas_szoveg"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rock"/>
+
+    <TextView
+        android:id="@+id/sajat_valasztas_szoveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sajat_valasztas_kep"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="A te választásod"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sajat_valasztas_szoveg"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_ko"
+            android:src="@drawable/rock"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_papir"
+            android:src="@drawable/paper"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_ollo"
+            android:src="@drawable/scissors"/>
+    </LinearLayout>
+
+</RelativeLayout>
